@@ -4,6 +4,10 @@
   "description": "generate colors sequence in css accepted format (rgb or hex string), according to input values.",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
+  "files": [
+    "dist/*",
+    "types/*"
+  ],
   "scripts": {
     "start": "npm run build && npm uninstall && npm link",
     "build": "./node_modules/.bin/babel ./src --out-dir ./dist/",
