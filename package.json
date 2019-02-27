@@ -1,0 +1,24 @@
+{
+  "name": "color-sequences",
+  "version": "0.0.1",
+  "description": "generate colors sequence in css accepted format (rgb or hex string), according to input values.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StTraft/color-seq.git"
+  },
+  "keywords": [
+    "colors",
+    "sequences",
+    "pantone"
+  ],
+  "author": "Gordon Yip",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StTraft/color-seq/issues"
+  },
+  "homepage": "https://github.com/StTraft/color-seq#readme"
+}
