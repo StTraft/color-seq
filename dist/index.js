@@ -1,1 +1,1 @@
-"use strict";console.log("foo");
+"use strict";var _injectColor=_interopRequireDefault(require("./injectColor"));Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}var _default=_injectColor.default;exports.default=_default;
