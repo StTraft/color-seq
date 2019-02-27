@@ -2,5 +2,8 @@
   "presets": [
     "@babel/preset-env",
     "minify"
+  ],
+  "plugins": [
+    "@babel/proposal-export-default-from"
   ]
 }
