@@ -1,4 +1,3 @@
-declare module 'color-sequences' {
 
   export interface DataSegment {
     label: string
@@ -11,14 +10,14 @@ declare module 'color-sequences' {
   }
   export interface InjectColorOptions {
     format?: 'hash'|'rgb'
+    inject?: boolean
     satBase?: number
-    satRange?: number,
-    lumBase?: number,
+    satRange?: number
+    lumBase?: number
     lumRange?: number
   }
 
-  declare function getPercentageString(total: number, value: number): string;
+  export function getPercentageString(total: number, value: number): string;
   
   export default function injectColor(total: number, data: DataSegment[], options?: InjectColorOptions): ColoredDataSegment[];
-}
 
