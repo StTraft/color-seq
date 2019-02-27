@@ -2,8 +2,9 @@
   "name": "color-sequences",
   "version": "0.0.1",
   "description": "generate colors sequence in css accepted format (rgb or hex string), according to input values.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "./node_modules/.bin/babel ./src --out-file ./dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +21,16 @@
   "bugs": {
     "url": "https://github.com/StTraft/color-seq/issues"
   },
-  "homepage": "https://github.com/StTraft/color-seq#readme"
+  "homepage": "https://github.com/StTraft/color-seq#readme",
+  "dependencies": {
+    "decimal.js": "^10.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-preset-minify": "^0.5.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.4"
+  }
 }
