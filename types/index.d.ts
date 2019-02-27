@@ -17,8 +17,8 @@ declare module 'color-sequences' {
     lumRange?: number
   }
 
-  export function getPercentageString(total: number, value: number): string
+  declare function getPercentageString(total: number, value: number): string;
   
-  export default function injectColor(total: number, data: DataSegment[], options?: InjectColorOptions): ColoredDataSegment[]
+  export default function injectColor(total: number, data: DataSegment[], options?: InjectColorOptions): ColoredDataSegment[];
 }
 
