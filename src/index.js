@@ -1,1 +1,3 @@
-console.log('foo')
+import injectColor from './injectColor'
+
+export default injectColor
