@@ -1,8 +1,6 @@
 import injectColor from './injectColor'
-import getPercentageString from './lib/getPercentageString'
+import _getPercentageString from './lib/getPercentageString'
 
-export {
-  getPercentageString
-}
+export const getPercentageString = _getPercentageString
 
 export default injectColor
