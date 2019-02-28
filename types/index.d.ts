@@ -2,11 +2,13 @@
   export interface DataSegment {
     label: string
     value: number
+    [k : string]: any
   }
   export interface ColoredDataSegment {
     label: string
     value: number
     color: string
+    [k: string]: any
   }
   export interface InjectColorOptions {
     format?: 'hash'|'rgb'
