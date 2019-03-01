@@ -1,6 +1,7 @@
 import getPercentageString from './lib/getPercentageString'
 import sigmoid from './lib/sigmoid'
 import hsv2rgb from './lib/hsv2rgb'
+import Decimal from 'decimal.js'
 
 export default (total, data, options = {}) => {
   const {
@@ -12,7 +13,7 @@ export default (total, data, options = {}) => {
     inject = true,
   } = options
 
-  return data.map((segment, index) => {
+  return data.map((segment, index, ctx) => {
     // generate Hue value from segment.label
     const labelHash = segment.label
       .split('')
@@ -21,7 +22,8 @@ export default (total, data, options = {}) => {
     const sat =
       satBase +
       satRange * sigmoid(parseFloat(getPercentageString(total, segment.value)))
-    const lum = ((labelHash * index) % lumRange) + lumBase
+    const lum = parseFloat(Decimal.sin(Math.PI * index / (ctx.length/3) ).times(lumRange).plus(lumBase).toFixed(2))
+    // const lum = ((labelHash * index) % lumRange) + lumBase
     const [r, g, b] = hsv2rgb(hue, sat, lum)
     return inject
       ? {
