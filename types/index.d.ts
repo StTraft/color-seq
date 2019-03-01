@@ -1,3 +1,6 @@
+/// <reference types="node" />
+
+declare module 'color-sequences' {
 
   export interface DataSegment {
     label: string
@@ -18,8 +21,11 @@
     lumBase?: number
     lumRange?: number
   }
-
+  
   export function getPercentageString(total: number, value: number): string;
   
   export default function injectColor(total: number, data: DataSegment[], options?: InjectColorOptions): ColoredDataSegment[];
+}
+
+  
 

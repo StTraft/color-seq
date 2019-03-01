@@ -6,7 +6,8 @@
   "types": "types/index.d.ts",
   "files": [
     "dist/*",
-    "types/*"
+    "types/*",
+    "LICENSE"
   ],
   "scripts": {
     "start": "npm run build && npm uninstall && npm link",
@@ -29,6 +30,7 @@
   },
   "homepage": "https://github.com/StTraft/color-seq#readme",
   "dependencies": {
+    "@types/node": "^11.9.6",
     "decimal.js": "^10.1.0"
   },
   "devDependencies": {
