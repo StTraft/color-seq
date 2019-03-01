@@ -36,9 +36,9 @@ const injectedData = colorSeq(total, data);
 | :- | :- | :- |
 | format | 'hash' or 'rgb' | The format of output color string. Default 'hash'. |
 | inject | `true` or `false` | define the return array. Set `true` to return the original array of object with a key `color` injected, set `false` to return an array of object with only the key `color`. |
-| satBase | 0 - 100 | Base of Saturation value. Default 28. Better not touching it unless you know about colouring. |
+| satBase | 0 - 100 | Base of Saturation value. Default 18. Better not touching it unless you know about colouring. |
 | satRange | number | Range of variations of Saturation that inputs can alter. Related to `satBase`. Better not touching it unless you know about colouring. |
-| lumBase | 0 - 100 | Base of Lightness value. Default 62. Better not touching it unless you know about colouring. |
+| lumBase | 0 - 100 | Base of Lightness value. Default 54. Better not touching it unless you know about colouring. |
 | lumRange | number | Range of variations of Lightness that inputs can alter. Related to `satBase`. Better not touching it unless you know about colouring. |
 
 

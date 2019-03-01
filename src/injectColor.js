@@ -5,10 +5,10 @@ import hsv2rgb from './lib/hsv2rgb'
 export default (total, data, options = {}) => {
   const {
     format = 'hash',
-    satBase = 28,
-    satRange = 20,
-    lumBase = 62,
-    lumRange = 20,
+    satBase = 18,
+    satRange = 31,
+    lumBase = 54,
+    lumRange = 41,
     inject = true,
   } = options
 
