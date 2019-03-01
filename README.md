@@ -39,6 +39,6 @@ const injectedData = colorSeq(total, data);
 | satBase | 0 - 100 | Base of Saturation value. Default 18. Better not touching it unless you know about colouring. |
 | satRange | number | Range of variations of Saturation that inputs can alter. Related to `satBase`. Better not touching it unless you know about colouring. |
 | lumBase | 0 - 100 | Base of Lightness value. Default 54. Better not touching it unless you know about colouring. |
-| lumRange | number | Range of variations of Lightness that inputs can alter. Related to `satBase`. Better not touching it unless you know about colouring. |
+| lumRange | number | Range of variations of Lightness that inputs can alter. Related to `lumBase`. Better not touching it unless you know about colouring. |
 
 
